@@ -7,11 +7,18 @@ let maxRating = 5
 let minRating = 1
 
 const Product = ({id,title,price, description,category,image}) => {
-  
+
+
     const [rating] = useState(
         Math.floor(Math.random()* (maxRating - minRating + 1) + minRating)
 
     )
+    const addItemsToBasket = ()=>{
+        const Product = {
+            id,title,price, description,category,image,hasPrime,rating
+        }
+        dispatch(addToBasket(Product))
+    }
     const[hasPrime] = useState(Math.random() < 0.5)
   
     return (
@@ -33,7 +40,8 @@ const Product = ({id,title,price, description,category,image}) => {
             <img className='w-12 ' src="https:/links.papareact.com/fdw" alt="" />
             <p className='text-xs text-gray-400'>Free Delivery</p>
             </div>}
-        <button  className='mt-auto button'>Add to Basket</button>
+        <button   className='mt-auto button'>Add to Basket</button>
+
     </div>
   )
 }

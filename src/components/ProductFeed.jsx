@@ -18,7 +18,7 @@ const ProductFeed = ({products}) => {
         />)}
         
         
-          <img src="https:/links.papareact.com/dyz" alt="IMAGE LOADING" className='md:col-span-full' />
+          <img src="https://m.media-amazon.com/images/G/31/AMS/IN/970X250-_desktop_banner.jpg" alt="IMAGE LOADING" className='md:col-span-full mx-auto' />
           <div className='md:col-span-2'>
 
           {products.slice(4,5).map(({id,title,price, description,category,image})=>

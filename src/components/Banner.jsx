@@ -17,13 +17,13 @@ const Banner = () => {
         interval={5000}
         >
         <div>
-            <img loading='lazy' src="https://m.media-amazon.com/images/I/71usv3CIbTL._SX3000_.jpg" alt="" />
+            <img  src="https://m.media-amazon.com/images/I/71usv3CIbTL._SX3000_.jpg" alt="Image" />
         </div>
         <div>
-            <img loading='lazy' src="https://m.media-amazon.com/images/I/616+GTPIwHL._SX3000_.jpg" alt="" />
+            <img  src="https://m.media-amazon.com/images/I/616+GTPIwHL._SX3000_.jpg" alt="Image" />
         </div>
         <div>
-            <img loading='lazy' src="https://m.media-amazon.com/images/I/613-gA49v1L._SX3000_.jpg" alt="" />
+            <img  src="https://m.media-amazon.com/images/I/613-gA49v1L._SX3000_.jpg" alt="Image" />
         </div>
 
         </Carousel>

@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from "next/image"
 import {AiOutlineSearch } from "react-icons/ai"
 import {AiOutlineShoppingCart} from "react-icons/ai"
 import {FiMenu} from "react-icons/fi"

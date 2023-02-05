@@ -4,16 +4,12 @@ import {AiOutlineShoppingCart} from "react-icons/ai"
 import {FiMenu} from "react-icons/fi"
 import { useSession, signIn, signOut } from "next-auth/react"
 import { useRouter } from 'next/router';
-import {useContext } from "react"
-import BasketContext from './BasketContext'
 
 
 const Header = () => {
     const{ data:session } = useSession()
     const router = useRouter()
-    const basket = useContext(BasketContext)
-    const noOfItems = basket.items.length
-
+    const items = []
 
   return (
     <header>
@@ -48,7 +44,7 @@ const Header = () => {
                 <p className='font-bold md:text-xs'>& Orders</p>
               </div>
               <div  className='link relative flex items-center p-1' onClick={()=>{router.push("/basket")}}>
-                <span className='absolute top-0 right-0 md:right-9 h-4 w-4 items-center flex justify-center bg-yellow-400 rounded-full text-black font-bold'>{noOfItems}</span>
+                <span className='absolute top-0 right-0 md:right-9 h-4 w-4 items-center flex justify-center bg-yellow-400 rounded-full text-black font-bold'>2</span>
                 <AiOutlineShoppingCart size={30}/>
                 <p className='text-center font-bold  md:text-xs ml-1 hidden md:inline mt-2'>Basket</p>
               </div>
